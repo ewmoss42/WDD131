@@ -1,0 +1,57 @@
+h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+    border: solid gold;
+    border-width: 0 1px; /* Keeps only left and right border */
+    padding: 20px;
+}
+
+nav a {
+    display: inline-block; /* Helps with spacing */
+    margin: 0 15px;
+    color: red;
+    text-decoration: none; /* Removes underline for cleaner look */
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Simplifies column definition */
+    grid-template-rows: auto; /* Allows rows to expand based on content */
+    gap: 10px; /* Adds some space between grid items */
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    grid-column: 2 / span 2; /* More explicit way to span columns */
+}
+
+img {
+    display: block;
+    margin: auto;
+    grid-column: 2 / span 2;
+    max-width: 100%; /* Ensures images scale within their grid area */
+    height: auto;
+}
+
+.description1 {
+    text-align: center;
+    padding: 20px;
+    grid-column: 2 / span 2;
+}
+
+.book1info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    border: solid gold;
+    border-width: 0px 1px; /* Keeps only left and right border */
+    padding: 10px;
+    text-align: center; /* Centers text inside */
+}
