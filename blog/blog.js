@@ -11,17 +11,4 @@ const articles = [
 		genre: 'Fantasy',
 		stars: '****'
 	},
-	{
-		id: 2,
-		title: 'Magnus Chase Book One: Sword of Summer',
-		date: 'December 12, 2021',
-		description:
-			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
-		imgSrc:
-			'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
-		imgAlt: 'Book cover for Magnus Chase 1',
-		ages: '12-16',
-		genre: 'Fantasy',
-		stars: '⭐⭐⭐⭐'
-	}
 ]
