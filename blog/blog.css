@@ -1,57 +1,124 @@
+/* PAGE STRUCTURE BASICS */
+
 h1 {
     font-size: 2em;
     color: #333;
     text-align: center;
-    padding: 20px;
+    padding: 20px
 }
 
 nav {
-    text-align: center;
-    border: solid gold;
-    border-width: 0 1px; /* Keeps only left and right border */
+    text-align: right;
+    border-style: solid;
+    border-color: gold;
+    border-left-color: white;
+    border-right-color: white;
     padding: 20px;
 }
 
 nav a {
-    display: inline-block; /* Helps with spacing */
-    margin: 0 15px;
+    padding: 30px;
     color: red;
-    text-decoration: none; /* Removes underline for cleaner look */
-    font-weight: bold;
 }
 
 main {
+    padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Simplifies column definition */
-    grid-template-rows: auto; /* Allows rows to expand based on content */
-    gap: 10px; /* Adds some space between grid items */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 h2 {
-    text-align: center;
     color: red;
-    grid-column: 2 / span 2; /* More explicit way to span columns */
+    grid-column: 2/4;
 }
 
-img {
+.main {
     display: block;
     margin: auto;
-    grid-column: 2 / span 2;
-    max-width: 100%; /* Ensures images scale within their grid area */
-    height: auto;
+    grid-column: 2/4;
+    text-align: center;
 }
 
+/* BOOK 1 STYLE */
+
 .description1 {
-    text-align: center;
     padding: 20px;
-    grid-column: 2 / span 2;
+    grid-column: 2/4;
 }
 
 .book1info {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-    border: solid gold;
-    border-width: 0px 1px; /* Keeps only left and right border */
-    padding: 10px;
-    text-align: center; /* Centers text inside */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-style: solid;
+    border-top: white;
+    border-bottom: white;
+    border-left: white;
+    border-color: gold;
+    text-align: right;
+}
+
+.book1info p {
+    margin-right: 20px;
+    line-height: 10px;
+}
+
+.date {
+    font-size: larger;
+}
+
+.dropdown {
+    border: solid;
+    border-color: white;
+    border-color: gold;
+    padding-left: 20px;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.dropdown p {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown select {
+    display: inline-block;
+    width: 75px;
+}
+
+/* BOOK 2 STYLE */
+
+.book2info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-style: solid;
+    border-top: white;
+    border-bottom: white;
+    border-left: white;
+    border-color: gold;
+    text-align: right;
+}
+
+.book2info p {
+    margin-right: 20px;
+    line-height: 10px;
+}
+
+.dropdown2 {
+    border: solid;
+    border-color: white;
+    border-color: gold;
+    padding-left: 20px;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.dropdown2 p {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown2 select {
+    display: inline-block;
+    width: 75px;
 }
