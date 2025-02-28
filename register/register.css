@@ -159,3 +159,14 @@
       width: 100%;
     }
   }
+    @media (min-width: 800px) {
+    .participants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    button#add {
+        grid-column: 1/3;
+    }
+}
