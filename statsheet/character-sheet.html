@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Sheet</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/shield.png" alt="Website Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="character-sheet.html">Character Sheet</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="character-form">
+      <h1>Create Your Character</h1>
+      <form id="characterForm">
+        <label for="name">Character Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="race">Race:</label>
+        <input type="text" id="race" name="race" required>
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required>
+
+        <label for="level">Level:</label>
+        <input type="number" id="level" name="level" required>
+
+        <label for="strength">Strength:</label>
+        <input type="number" id="strength" name="strength" required>
+
+        <label for="dexterity">Dexterity:</label>
+        <input type="number" id="dexterity" name="dexterity" required>
+
+        <label for="constitution">Constitution:</label>
+        <input type="number" id="constitution" name="constitution" required>
+
+        <label for="intelligence">Intelligence:</label>
+        <input type="number" id="intelligence" name="intelligence" required>
+
+        <label for="wisdom">Wisdom:</label>
+        <input type="number" id="wisdom" name="wisdom" required>
+
+        <label for="charisma">Charisma:</label>
+        <input type="number" id="charisma" name="charisma" required>
+
+        <h3>Abilities</h3>
+        <label for="abilities">List of Abilities:</label>
+        <textarea id="abilities" name="abilities"></textarea>
+
+        <h3>Skills</h3>
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skills" name="skills">
+
+        <h3>Inventory</h3>
+        <label for="inventory">Inventory Items (comma-separated):</label>
+        <input type="text" id="inventory" name="inventory">
+
+        <button type="submit">Save Character</button>
+      </form>
+    </section>
+
+    <section class="character-display">
+      <h2>Your Character</h2>
+      <div id="characterInfo">
+        <!-- Character information will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 D&D Player Stat Sheet</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
